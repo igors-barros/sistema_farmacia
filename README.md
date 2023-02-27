@@ -18,17 +18,24 @@ Definição das tarefas que precisam ser feitas, estão sendo feitas ou foram en
 
 ## Proposta de problema
 
-Desenvolvimento de um sistema para consulta de farmacias platonistas em uma cidade. 
+Este projeto tem como objetivo o desenvolvimento de um sistema para consulta de farmacias plantonistas em uma cidade. Propomos o desenvolvimento do mesmo, pois a informação da farmacia plantonista é de dificil acesso ao cliente alvo. Com este sistema temos tambem a oportunidade de criar um novo canal de vendas para as farmacias. Além de ser um meio informativo basico, pretendemos criar tambem um catalogo de produtos. O sistema proposto vai possuir um aplicativo (front-end), para interação do usuario e os dados mostrados serão fornecidos por uma API REST (back-end).
+
+Inicialmente propomos trabalhar com dados ficticios para desenvolver a estrutura do aplicativo. Dados como, nome da farmacia, endereço, telefone de contato, horario de funcionamento, produtos e medicamentos com seus respectivos valores. Tais produtos e medicamentos podendo estarem categorizados por sessão, como, higiene pessoal, medicamentos, perfumaria, cabelo, artigos de beleza, etc.. Para facilitar a implementação futura de um filtro.
+
+Aprofundando nas definições de dados iremos definir um esquema com as entidades(objetos) e os atributos(caracteristicas) de cada entidade. Identifdicamos duas entidades que são as farmacias e os produtos.
+
+Para iniciar o trabalho no frontend, que sera desenvolvido em react native, os dados serão listas de objetos mockado em JS. Futuramente esses dados serão fornecidos atraves de uma API desenvolvida em Node.
+
 
 [Preencher esta sessão com as seguintes informações]
 
 Sobre o problema geral
-- Qual problema estamos tentando resolver? 
-- Por que precisamos montar um sistema para isso?
-- De onde os dados vão vir para o sistema?
-  - Vamos adotar alguma simplificação? 
-  - Como vamos implementar essa simplificação? (E.g carregar uma planilha - definir o que vai ter na planilha como colunas, o que cada linha representa, etc.)
-  - Conseguimos remover essa simplificação facilmente no futuro e implementar uma fonte de dados real?  
+- ~~Qual problema estamos tentando resolver?~~ 
+- ~~Por que precisamos montar um sistema para isso?~~
+- ~~De onde os dados vão vir para o sistema?~~
+  - ~~Vamos adotar alguma simplificação?~~ 
+  - ~~Como vamos implementar essa simplificação? (E.g carregar uma planilha - definir o que vai ter na planilha como colunas, o que cada linha representa, etc.)~~
+  - ~~Conseguimos remover essa simplificação facilmente no futuro e implementar uma fonte de dados real?~~  
 - No caso de mais de 1 sistema (e.g Backend compartilhado entre gerador de dados (adminstrador) e consumidor de dados (usuario), e um frontend para usuario, e outro frontend para adminstrador), como eles vão se comunicar. Por que precisamos de mais de um sistema?
   
 **Tarefa em dupla**: Desenhar a arquitetura do nosso sistema com [DrawIO](https://draw.io) 
