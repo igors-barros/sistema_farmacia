@@ -4,60 +4,24 @@ Arquivo para ir documentando a concepção do projeto de um applicativo desenvol
 
 ## Cronograma do projeto
 
-Definição das tarefas que precisam ser feitas, estão sendo feitas ou foram entregues no projeto. As sessões devem ir sendo atualizadas de acordo com o que esta rolando no projeto.
-
-### Em Andamento (Ongoing)
-
-- 25/02/2023 - //2023: Definição do projeto através de Markdown (Finalizado quando fechar a proposta do problema).
-- //2023 - //2023: Criação do repositório do projeto.
-
-
-### Finalizado (Done)
--  24/02/2023 - 24/02/2023: Concepção de um projeto de estudo entre pares para explorar tecnologias.
+- 27/02/2023: Adição de material sobre Git, Github e limpeza da documentação.
+- 26/02/2023: Definição do projeto através de Markdown (Finalizado quando fechar a proposta do problema).
+- 24/02/2023: Concepção de um projeto de estudo entre pares para explorar tecnologias.
 
 
 ## Proposta de problema
 
 Este projeto tem como objetivo o desenvolvimento de um sistema para consulta de farmacias plantonistas em uma cidade. Propomos o desenvolvimento do mesmo, pois a informação da farmacia plantonista é de dificil acesso ao cliente alvo. Com este sistema temos tambem a oportunidade de criar um novo canal de vendas para as farmacias. Além de ser um meio informativo basico, pretendemos criar tambem um catalogo de produtos. O sistema proposto vai possuir um aplicativo (front-end), para interação do usuario e os dados mostrados serão fornecidos por uma API REST (back-end).
 
+**Tarefa em dupla**: Desenhar a arquitetura do nosso sistema com [DrawIO](https://draw.io) 
+
 Inicialmente propomos trabalhar com dados ficticios para desenvolver a estrutura do aplicativo. Dados como, nome da farmacia, endereço, telefone de contato, horario de funcionamento, produtos e medicamentos com seus respectivos valores. Tais produtos e medicamentos podendo estarem categorizados por sessão, como, higiene pessoal, medicamentos, perfumaria, cabelo, artigos de beleza, etc.. Para facilitar a implementação futura de um filtro.
 
 Aprofundando nas definições de dados iremos definir um esquema com as entidades(objetos) e os atributos(caracteristicas) de cada entidade. Identifdicamos duas entidades que são as farmacias e os produtos.
 
 Para iniciar o trabalho no frontend, que sera desenvolvido em react native, os dados serão listas de objetos mockado em JS. Futuramente esses dados serão fornecidos atraves de uma API desenvolvida em Node.
-
-
-[Preencher esta sessão com as seguintes informações]
-
-Sobre o problema geral
-- ~~Qual problema estamos tentando resolver?~~ 
-- ~~Por que precisamos montar um sistema para isso?~~
-- ~~De onde os dados vão vir para o sistema?~~
-  - ~~Vamos adotar alguma simplificação?~~ 
-  - ~~Como vamos implementar essa simplificação? (E.g carregar uma planilha - definir o que vai ter na planilha como colunas, o que cada linha representa, etc.)~~
-  - ~~Conseguimos remover essa simplificação facilmente no futuro e implementar uma fonte de dados real?~~  
-- No caso de mais de 1 sistema (e.g Backend compartilhado entre gerador de dados (adminstrador) e consumidor de dados (usuario), e um frontend para usuario, e outro frontend para adminstrador), como eles vão se comunicar. Por que precisamos de mais de um sistema?
-  
-**Tarefa em dupla**: Desenhar a arquitetura do nosso sistema com [DrawIO](https://draw.io) 
-
-Sobre o sistemas de usuarios?
-- Como o usuario vai acessar o sistema (App Mobile ou App web)?
-- Com qual tecnologia vamos implementar essa aplicação de usuário? Por que?
-  - Material sobre escolha de tecnologia: 
-  - Alguns pontos pessoais que eu olho antes de escolher tecnologia para um projeto:
-    - Qual linguagem EU quero aprender ou me sinto confortavel em usar?
-    - Tem algum cliente para o projeto que definiu algum pré-requisito de tecnologia?
-    - Se o cliente for você - pense no seus pré-requisitos. Mobile app - tem que escolher algo que roda no seu celular. Web App - Não pode ter pré-requisito de ter GPU se eu não tenho uma GPU para testar.
-    - Outras pessoas usam essa linguagem pra isso? (Pensando em encontrar desenvlovedor pra manter o projeto, mercado de trabalho, etc.).
-    - Tem alguma linguagem/tecnologia que é melhor para o tipo de problema? (Uma escolha ruim pode tornar um projeto de 1 semana em um de 3 meses).
-- Definir a interface de usuario do sistema
-  - Quais paginas o sistema vai ter 
-  - O que cada pagina deve mostrar para o usuario
-  - Como o usuario pode vai interagir com o sistema para navegar entre paginas? e.g Clicou em um botão na pagina A - Abre a pagina B.
-  - Talvez vale utilizar ferramentas de desenhos para planejar como vai ser o app
   
 **Tarefa em dupla**: Desenho de interface do usuario com o (Figma)[https://www.figma.com/].
-
 
 ## Set up do projeto
 
@@ -83,24 +47,21 @@ Definição da base para o projeto antes da gente começar a implementar. Docume
 [Escrevendo e formatando Markdown no Github](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax): Esse link é um documento que mostra tudo que da pra fazer com documentos Markdown no Github.
 
 ### Armazenamento do código
+Material complementar: [O que é Git e GitHub? (15min)](https://www.youtube.com/watch?v=GDGMf2bnHlE) 
 
-O que é Git? 
+O Git é uma ferramenta de versionamento de código. Ele tornar possível rastrear o histórico de modificações de um conjunto de arquivos. Com o Git podemos reverter mudanças, restaurando os arquivos para um estado anterior. Prentedemos desenvolver este projeto utilizando o Git para fins de versionamento deste projeto.
 
-Por que usar Git?
+O Github é uma platforma que armazena repositórios Git na núvem. Ele permite que multiplos desenvolvedores trabalhem simultaneamente e consigam puxar as atualizações mais recente do repositório sem necessariamente utilizando a mesma rede. Predentemos utilizar o Github para armazenar o código do nosso projeto e para facilitar a colaboração.
 
-O que é Github? 
+Comandos comuns do Git
+- `git pull`: Atualiza a versão local da branch com as ultimas mudanças da versão remota da branch.
+- `git add {file_name}`: Adiciona um arquivo ao ambiente de staging do Git.
+- `git commit -m "{commit message}"`: Persiste as mudanças do ambiente de staging na branch com uma mensagem.
+- `git push`: Persiste as modificações locais da branch para a versã remota da branch.
 
-Por que usar Github?
+### Arquitetura
 
-O que é um repositório?
-
-[O que é Git e GitHub? (15min)](https://www.youtube.com/watch?v=GDGMf2bnHlE) - Ele fala que você precisa dos arquivos do projeto, mas qualquer arquivo funciona na pratica (Esse documento markdown que voce ta lendo por exemplo).
-
-**Tarefa em dupla**: Criar uma conta no Github. Criar um repositório publico no Github. Clone o repositório da sua conta para a sua maquina com o Github desktop. Suba este documento markdown como um readme para o repositório. 
-
-**Tarefa**: Documente nesta sessão o que é um commit, uma branch e um merge request.
-
-#### Arquitetura do repositório
+**Tarefa** Transformar essa sessão em texto corrido.
 
 Dado os problemas que queremos resolver, conseguimos quebrar ele em "problemas" menores? Como?
   
@@ -112,13 +73,24 @@ O que é uma API?
 
 [O que são API's, front-end e back-end?](https://medium.com/@MacgyverMartins/o-que-s%C3%A3o-apis-front-end-e-back-end-conceitos-de-desenvolvimento-para-n%C3%A3o-programadores-parte-1-a76d3066b99a)
 
+O que significa REST?
+
+Por que precisamos de uma API RESTful para este projeto. 
+
+Quais serão os recursos (entidades) da nossa API REST.
+
+Quando vamos implementar a API REST. Sera antes ou depois de começar a interface de usuario? Porque?
+- Dica: JavaScript pode ser utilizado com objetos mockados. 
+
+[O que é API? REST e RESTful? Conheça as definições e diferenças!](https://becode.com.br/o-que-e-api-rest-e-restful/)
+
 O que é um projeto monorepo? 
 
 Por que usar monorepo?
 
 [O que é monorepo?](https://woliveiras.com.br/posts/o-que-%C3%A9-monorepo/) - Recomendo ler as primeiras 4 seções (Introdução até "O que de fato são os monorepos").
 
-**Tarefa em dupla**: Dentro do repositório local do Github, crie um sub-repositório (uma pasta nova) chamado "android_app".
+**Tarefa**: Dentro do repositório local do Github, crie um sub-repositório (uma pasta nova) chamado "android_app".
 
 ### Desenvolvimento e execução de código
 
